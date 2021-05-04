@@ -11,7 +11,7 @@ additional_file_types = {
     '.md': 'text/markdown'
 }
 
-# Focntion date
+# Focntion date 
 def datetimeformat(date_str):
     dt = arrow.get(date_str)
     return dt.humanize(locale='fr')
