@@ -1,0 +1,6 @@
+Dans ce programme, il integré Flask et Amazon S3, et aussi utilisé boto3, ce qui permet de:
+
+    1- Choisir dans quelle Bucket on fait la tâche. 
+    2- Copier des fichiers local sur un compartimenrt Amazon S3.
+    3- Supprimer des fichiers présent sur S3
+    4- télécharger des fichiers présent sur S3 vers le local
