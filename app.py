@@ -8,7 +8,7 @@ from resources import get_bucket, get_buckets_list
 from flask import json
 from werkzeug.exceptions import HTTPException
 
-# Configurere une nouvelle variable  d'application Flask
+# Configurere une nouvelle variable  d'application Flask 
 
 app = Flask(__name__)
 # Création d'une nouvelle instance de bootstrap 
