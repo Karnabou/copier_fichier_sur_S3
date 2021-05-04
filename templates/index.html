@@ -1,4 +1,4 @@
-<!--  -->
+<!-- Modèle Bootstrap de base qui est fourni par Flask Bootstrap -->
 {% extends "layout.html" %}
 {% block title %}Listes Bucket S3{% endblock %}
 
@@ -19,6 +19,7 @@
           <td>{{ bucket['Name'] }}</td>
           <td>{{ bucket['CreationDate'] | datetimeformat }}</td>
           <td>
+<!-- Formulaire de sélectionnement -->
             <form class="select-bucket" action="{{ url_for('index') }}" method="post">
               <input type="hidden" name="bucket" value="{{ bucket['Name'] }}">
               <button type="submit" class="btn btn-primary btn-sm">
