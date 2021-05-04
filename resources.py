@@ -11,8 +11,7 @@ def _get_s3_resource():
             aws_access_key_id=S3_KEY,
             aws_secret_access_key=S3_SECRET
                         )
-        
-    else:
+      else:
         return boto3.resource('s3')
 
 # Focntion mettre en place un variable resource s3
@@ -24,7 +23,6 @@ def get_bucket():
         bucket = S3_BUCKET
 
     return s3_resource.Bucket(bucket)
-
 
 def get_buckets_list():
     client = boto3.client('s3')
