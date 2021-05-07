@@ -7,7 +7,7 @@
 
 ## La manoeuvre de l'utiliser:
 
-Ce script peut s'excuter sur nimporte quel environnement et de développement, il sufit de l'ouvrir et l'exécuter
+Ce script peut s'excuter sur nimporte quel environnement de développement (PowerShell) , il sufit de l'ouvrir et l'exécuter
 
 ## Réference de contact:
 
