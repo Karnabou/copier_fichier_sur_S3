@@ -5,7 +5,7 @@
     3- Supprimer des fichiers présent sur S3
     4- télécharger des fichiers présent sur S3 vers le local
 
-## La manoere de l'utiliser:
+## La manoeuvre de l'utiliser:
 
 Ce script peut s'excuter sur nimporte quel environnement et de développement, il sufit de l'ouvrir et l'exécuter
 
