@@ -1,4 +1,5 @@
-# Importer les variables 
+#  Resources S3 - version 1.0
+#  Importer les variables 
 import boto3
 from flask import session
 # Importer les variables définies dans config.py 
@@ -8,10 +9,11 @@ from config import S3_BUCKET, S3_KEY, S3_SECRET
 def _get_s3_resource():
     if S3_KEY and S3_SECRET:
         return boto3.resource(
-            aws_access_key_id=S3_KEY,
+            aws_access_key_id=S3_KEY, 
             aws_secret_access_key=S3_SECRET
                         )
-      else:
+        
+    else:
         return boto3.resource('s3')
 
 # Focntion mettre en place un variable resource s3
@@ -24,6 +26,7 @@ def get_bucket():
 
     return s3_resource.Bucket(bucket)
 
+# Fonction liste des buckets
 def get_buckets_list():
     client = boto3.client('s3')
     return client.list_buckets().get('Buckets')
