@@ -1,3 +1,4 @@
+#  Transfert bidirectionel local/Bucket S3 - version 1.0
 #  Importer les mudules
 #  Importer render_template et notre dépendance Bootstrap
 from flask import Flask, render_template, request, redirect, url_for, flash, \
@@ -96,5 +97,5 @@ def handle_exception(e):
 # Lancer l'application
 if __name__ == "__main__":
      # Imprimer les erreurs Python possibles sur la page Web
-    app.debug = True
+    #app.debug = True
     app.run()
