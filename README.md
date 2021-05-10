@@ -13,7 +13,6 @@ Qui sont applé dans la page principale,
     - Le mudile 3 Filters.py sert à deduire le type de fichier, et afficher la date de la derniere modification.
     - Le mudule 4 config.py sert à stocker l'ID et le code secret du bucket.
 
-
 # La manoeuvre de l'utiliser:
 
 Ce script peut s'excuter sur nimporte quel environnement de développement (PowerShell, Vicual studio...) , il sufit de l'ouvrir et l'exécuter
