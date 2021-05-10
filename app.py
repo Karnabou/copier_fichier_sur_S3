@@ -1,6 +1,7 @@
 #  Transfert bidirectionel local/Bucket S3 - version 1.0
-#  Importer les mudules
+#   Importer les mudules
 #  Importer render_template et notre dépendance Bootstrap
+
 from flask import Flask, render_template, request, redirect, url_for, flash, \
     Response, session
 from flask_bootstrap import Bootstrap
@@ -9,7 +10,7 @@ from resources import get_bucket, get_buckets_list
 from flask import json
 from werkzeug.exceptions import HTTPException
 
-# Configurere une nouvelle variable  d'application Flask 
+# Configurer une nouvelle variable  d'application Flask
 
 app = Flask(__name__)
 # Création d'une nouvelle instance de bootstrap 
@@ -49,7 +50,6 @@ def upload():
 
     my_bucket = get_bucket()
     my_bucket.Object(file.filename).put(Body=file)
-
 
     flash('Fichier téléchargé avec succès')
   
@@ -94,8 +94,7 @@ def handle_exception(e):
     })
     response.content_type = "application/json"
     return response
+
 # Lancer l'application
 if __name__ == "__main__":
-     # Imprimer les erreurs Python possibles sur la page Web
-    #app.debug = True
-    app.run()
+      app.run()
