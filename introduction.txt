@@ -1,6 +1,9 @@
-Ce programme, intégré les modules Flask et Amazon S3, il utilise egalement boto3, ce qui permet de:
+J’ai décidé de créer ce script qui me permet de gagner du temps sur l’administration du transfert des fichiers de mon disque local vers le bucket S3 et inversement.
+Pour se faire j’y ai intégré des modules existants permettant :
 
-    1- Choisir dans quel Bucket on fait la tâche. 
-    2- Copier des fichiers locaux sur un compartiment Amazon S3.
-    3- Supprimer des fichiers présent sur S3.
-    4- Télécharger des fichiers présent sur S3 vers le disque local.
+    - De lister les fichiers sur S3
+    - Aux utilisateurs de copier et de télécharger des fichiers vers et depuis un bucket Amazon S3. 
+    - De faciliter l'interaction avec les API S3 et d'autres services.
+    - De convertire entre un nom de fichier ou une URL et le type MIME associé à l'extension de nom de fichie.
+    - De gérer l’arborescence des fichiers de l’ordinateur.
+    - De travailler avec la date et l'heure.
