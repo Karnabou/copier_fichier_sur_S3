@@ -1,3 +1,4 @@
+<!-- Formulaire de téléchargement local/Bucket S3 - version 1.0 -->
 <!-- Modèle Bootstrap de base qui est fourni par Flask Bootstrap -->
 
 {% extends "layout.html" %}
@@ -6,7 +7,8 @@
 {% block content %}
   <div class="container">
     <div class="col-12-xs">
-      <h3>Bucket Info</h3>
+
+      <h3><p style="color: blue;"><u><b>Espace bucket Amazon S3</b></u></p></h3>
       <p>Créer: {{ my_bucket.creation_date | datetimeformat }}</p>
 
       {% with messages = get_flashed_messages() %}
